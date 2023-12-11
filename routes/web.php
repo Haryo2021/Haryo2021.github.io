@@ -1,0 +1,17 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LokasiController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+Route::get('/', [LokasiController::class, 'index']);
+Route::get('/Lokasi/json', [LokasiController::class, 'Lokasi']);
